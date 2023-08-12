@@ -1,0 +1,637 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&dispaly=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	border: none;
+	outline: none;
+	scroll-behavior: smooth;
+	font-family: 'Poppins', sans-serif;
+}
+
+body{
+	background: #1f242d;
+	color: #ededed;
+}
+
+span{
+		color: #00abf0;
+
+}
+
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 10%;
+	background: #081b29;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+}
+
+.logo{
+	position: relative;
+	font-size: 19px;
+	color: #ededed;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.navbar a{
+	font-size: 17px;
+	color: #ededed;
+	text-decoration: none;
+	font-weight: 525;
+	margin-left: 35px;
+	transition: .5s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+	color: #00abf0;
+
+}
+
+.home{
+	height: 100vh;
+	background: url('images/IMG_20230325_140210.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	padding: 0 10%;
+}
+
+.home-content{
+	display: inline;
+	align-items: center;
+	justify-items: center;
+	max-width: 600px;
+}
+
+.home-img img{
+	padding-top: 10px;
+	width: 35vw;
+	animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage{
+	0%{
+		transform: translateY(0);
+	}
+	50%{
+	transform: translateY(-2.4rem);
+	}
+	100%{
+	transform: translateY(0);
+	}
+}
+
+.social-media a{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 4rem;
+	height: 4rem;
+	background: transparent;
+	border: .2rem solid var(--main-color);
+	border-radius: 50%;
+	font-size: 2rem;
+	color: var(--main-color);
+	margin: 3rem 1.5rem 3rem 0;
+	transition: .5s ease;
+}
+
+.social-media a:hover{
+	background: #0ef;
+	color: #323946;
+	box-shadow: #0ef;
+}
+
+.btn{
+	display: inline-block;
+	padding: 1rem 2.8rem;
+	background: #0ef;
+	border-radius: 4rem;
+	box-shadow: 0 0 1rem #0ef;
+	font-size: 1.6rem;
+	color: #323946;
+	letter-spacing: .1rem;
+	font-weight: 600;
+	transition: .65s ease;
+}
+
+.btn:hover{
+	box-shadow: none;
+}
+
+
+
+nav img{
+	width: 150px;
+	/*fixing size of logo*/
+}
+
+.nav-links{
+	flex: 1;
+	text-align: right;
+}
+
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+
+.nav-links ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+.nav-links ul li::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #f44336;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+
+.text-box{
+	width: 90%;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%)/*will be in the center of the div*/;
+	text-align: center;
+}
+
+.text-box h1{
+	font-size: 62px;
+}
+
+.text-box p{
+	margin: 10px/*from top*/ 0/*from left to right*/ 40px/*from bottom*/;
+	font-size: 12px;
+	color: #fff;
+}
+
+.hero-btn{
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 12px 34px;
+	font-size: 13px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+}
+
+.hero-btn:hover{
+	border: 1px solid #f44336;
+	background: #f44336;
+	transition: 1s;
+}
+
+nav .fa{
+	display: none;
+	/*hides the icons for the devices with larger screens*/
+}
+
+@media(max-width: 1000px/*changed from 700px*/)
+/*what ever quote we will write in this media query
+will be applicable to the device whose width is less
+than or equal to 700 pixels*/
+{
+	.text-box h1{
+		font-size: 80px;
+	}
+	.text-box p{
+		font-size: 20px;
+	}
+	.nav-links ul li{
+		display: block;
+		font-size: 30px;
+	}
+	.nav-links{
+		position: fixed;
+		background: #f44336;
+		height: 100vh;
+		/*it will be complete height, run top to bottom*/
+		width: 200px;
+		top: 0;
+		right: -200px;
+		text-align: left;
+		z-index: 2;
+		transition: 1s;
+	}
+	nav .fa{
+		display: block;
+		/*adding visibility of the icons in smaller devices*/
+		color: #fff;
+		margin: 10px;
+		font-size: 22px;
+		cursor: pointer;
+	}
+	.nav-links ul{
+		padding: 30px;
+	}
+}
+
+/*--- Course ---*/
+
+.course{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+
+h1{
+	font-size: 36px;
+	font-weight: 600;
+}
+
+p{
+	color: #777;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 10px;
+}
+
+.row{
+	margin-top: 5%;
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+.course-col{
+	flex-basis: 31%;
+	background: #fff3f3;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	transition: 0.5s;
+}
+
+h3{
+	text-align: center;
+	font-weight: 600;
+	margin: 10px 0;
+}
+
+.course-col:hover{
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+@media(max-width: 1000px){
+	.row{
+		flex-direction: column;
+	}
+}
+
+/*--- Campus ---*/
+
+.campus{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.campus-col{
+	flex-basis: 32%;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+}
+
+.campus-col img{
+	width: 100%;
+	display: block;
+	/*makes the corners round*/
+}
+
+.layer{
+/*	background: rgba(226, 0, 0, 0.7);*/
+	background: transparent;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 0.5s;
+}
+
+.layer:hover{
+	background: rgba(226,0,0,0.7);
+}
+
+.layer h3{
+	width: 100%;
+	font-weight: 500;
+	color: #fff;
+	font-size: 26px;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.layer:hover h3{
+	bottom: 49%;
+	opacity: 1;
+}
+
+/*--- Facilities ---*/
+
+.facilities{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+
+.facilities-col{
+	flex-basis: 31%;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	text-align: left;
+}
+
+.facilities-col img{
+	width: 100%;
+	border-radius: 10px;
+}
+
+.facilities-col p{
+	padding: 0;
+}
+
+.facilities-col h3{
+	margin-top: 16px;
+	margin-bottom: 15px;
+	text-align: left;
+}
+
+/*--- Testimonials ---*/
+
+.testimonials{
+	width: 80%;
+	margin: auto;
+	padding-top: 100px;
+	text-align: center;
+}
+
+.testimonials-col{
+	flex-basis: 44%;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	text-align: left;
+	background: #fff3f3;
+	padding: 25px;
+	cursor: pointer;
+	display: flex;
+}
+
+.testimonials-col img{
+	height: 40px;
+	margin-left: 5px;
+	margin-right: 30px;
+	border-radius: 50%;
+}
+
+
+.testimonials-col p{
+	padding: 0;
+}
+
+.testimonials-col h3{
+	margin-top: 15px;
+	text-align: left;
+}
+
+.testimonials-col .fa{
+	color: #f44336;
+}
+
+@media(max-width: 1000px/*original was 700px*/){
+	.testimonials-col img{
+		margin-left: 0px;
+		margin-right: 15px;	}
+}
+
+/*--- Call To Action ---*/
+
+.cta{
+	margin: 100px auto;
+	width: 80%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(bimg/Building-Construction-2-480x480.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px;
+	text-align: center;
+	padding: 100px 0;
+}
+
+.cta h1{
+	color: #fff;
+	margin-bottom: 40px;
+	padding: 0;
+}
+
+.contact-us{
+	text-align: center;
+}
+
+@media(max-width: 1000px){
+	.cta{
+		font-size: 24px;
+	}
+}
+
+/*--- Footer ---*/
+
+.footer{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: .75rem 9%;
+	background: #323946;
+}
+
+.footer-text p{
+	font-size: 18px;
+}
+
+.footer-iconTop a{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: .8rem;
+	background: #0ef;
+	border-radius: .8rem;
+	transition: .5s ease;
+}
+
+.footer-iconTop a:hover{
+	box-shadow: #0ef;
+}
+
+.footer-iconTop a i{
+	font-size: 18px;
+	color: #323946;
+}
+
+/* about us page */
+
+.sub-header{
+	height: 50vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4, 9, 30, 0.7)/* first color code*/,rgba(4,9,30,0.7)),url(images/background.jpg)/*bacckground image*/;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+/*	overflow: hidden;*/
+}
+
+.sub-header h1{
+	margin-top: 100px;/*changes the position on screen of h1-about us*/
+}
+
+.about-us{
+	width: 80%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom: 50px;
+}
+
+.about-col{
+	flex-basis: 48%;
+	padding: 30px 2px;
+}
+
+.about-col img{
+	width: 100%;
+}
+
+.about-col h1{
+	padding top: 0;
+}
+
+.about-col p{
+	padding: 15px/* from top*/ 0/*from left*/ 25px/*from bottom*/;
+}
+
+.red-btn{
+	border: 1px solid #f44336;
+	background: transparent;
+	color: #f44336;
+}
+
+.red-btn:hover{
+	color: #fff;
+}
+
+/*--- Contact ---*/
+.location{
+	width: 80%;
+	margin: auto;
+	padding: 80px 0;
+}
+
+.location iframe{
+	width: 100%;
+}
+
+.contact-us{
+	width: 80%;
+	margin: auto;
+}
+
+.contact-col{
+	flex-basis: 48%;
+	margin-bottom: 30px;
+}
+
+.contact-col div{
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.contact-col div .fa /*icons*/{
+	font-size: 28px;
+	color: #f44336;
+	margin: 10px;
+	margin-right: 30px;
+}
+
+.contact-col div p{
+	padding: 0;
+}
+
+.contact-col div h5{
+	font-size: 20px;
+	margin-bottom: 5px;
+	color: #555;
+	font-weight: 400;
+}
+
+.contact-col input, .contact-col textarea{
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 17px;
+	outline: none;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+/*style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;" */
+/* top bottom button */
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #808080; /* Set a background color */
+  color: #FF8C00; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 7px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 16px; /* Increase font size */
+  transition: 1;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* for the bid */
+.file-uploaded {
+	padding: 0%, 20%;
+}
