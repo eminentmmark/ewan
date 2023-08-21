@@ -66,13 +66,48 @@ span{
 
 .home{
 	height: 100vh;
-	background: url('images/CCTV Camera.png') no-repeat;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	background-image: url('images/CCTV Camera.png') /* no-repeat; */
 	background-size: cover;
 	background-position: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 0;
+
+/* background cahnge  */
+	background-repeat: no-repeat;
+	animation: change 10s infinite linear;
+	/*animation-name: animate;
+	animation-direction: alternate-reverse;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-play-state: running;
+	animation-timing-function: ease-in-out;*/
+}
+
+/* for the background transittion */
+@keyframes change{
+	0%{
+		background-image: url('images/CCTV Camera.png');
+	}
+	20%{
+		background-image: url('images/IMG_20221125_203812.jpg');
+	}
+	40%{
+		background-image: url('images/IMG_20221120_200907.jpg');
+	}
+	60%{
+		background-image: url('images/IMG-20230806-WA0014.jpg');
+	}
+	80%{
+		background-image: url('images/CCTV Camera.png');
+	}
+	100%{
+		background-image: url('images/IMG_20221120_200907.jpg');
+	}
 }
 
 .home-content{
@@ -115,7 +150,7 @@ span{
 	border-radius: 50%;
 	font-size: 2rem;
 	color: var(--main-color);
-	margin: 3rem 1.5rem 3rem 0;
+	margin: 3rem 1.5rem 3rem;
 	transition: .5s ease;
 }
 
@@ -127,11 +162,11 @@ span{
 
 .btn{
 	display: inline-block;
-	padding: 1rem 2.8rem;
+	padding: .6rem 1.4rem;
 	background: #0ef;
 	border-radius: 4rem;
 	box-shadow: 0 0 1rem #0ef;
-	font-size: 1.6rem;
+	font-size: 1.2rem;
 	color: #323946;
 	letter-spacing: .1rem;
 	font-weight: 600;
@@ -181,6 +216,22 @@ span{
 	margin-top: 2rem;
 	cursor: pointer;
 }
+
+#bid form{
+	min-height: 220px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 240px;
+	margin: 0 auto;
+}
+
+#bid form input, 
+#bid form select{
+	padding: 3px;
+	border-radius: 6px;
+}
+
 
 
 
