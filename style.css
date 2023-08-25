@@ -160,6 +160,12 @@ span{
 	box-shadow: #0ef;
 }
 
+.buto{
+	display: flex;
+	justify-content: space-between;
+	margin: 0 2rem 0;
+}
+
 .btn{
 	display: inline-block;
 	padding: .6rem 1.4rem;
