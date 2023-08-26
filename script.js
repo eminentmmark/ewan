@@ -47,7 +47,7 @@
 
 // typed js
 	const typed = new Typed('.multiple-text', {
-		strings: ['Frontend Developer', 'Graphical Designer', 'Network Engineer'],
+		strings: ['DevOps', 'Digital Marketer', 'Frontend Developer', 'Network Architect','Writer and a Speaker', ],
 		typeSpeed: 100,
 		backSpeed: 100,
 		backDelay: 1000,
