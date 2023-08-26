@@ -143,6 +143,17 @@ span{
 	box-shadow: 0 0 1rem var(--main-color);
 }
 
+.buto{
+	display: grid;
+	justify-content: space-between;
+	align-items: center;
+	gap: 30px;
+}
+
+.buto a{
+	text-align: center;
+}
+
 .btn{
 	display: inline-block;
 	padding: 1rem 2.8rem;
