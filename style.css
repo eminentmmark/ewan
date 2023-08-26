@@ -163,7 +163,7 @@ span{
 .buto{
 	display: flex;
 	justify-content: space-between;
-	margin: 0 2rem 0;
+	gap: 20px;
 }
 
 .btn{
