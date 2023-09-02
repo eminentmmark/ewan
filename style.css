@@ -16,6 +16,11 @@ body{
 	color: #ededed;
 }
 
+section {
+	min-height: 100vh;
+	padding: 2.5rem 0% 2.5rem;
+}
+
 span{
 		color: #00abf0;
 
@@ -60,7 +65,7 @@ span{
 /* menu icon for small devices */
 #menu-icon {
 	font-size: 3.6rem;
-	color: var(--text-color);
+	color: #fff;
 	display: none;
 }
 
@@ -146,10 +151,10 @@ span{
 	width: 4rem;
 	height: 4rem;
 	background: transparent;
-	border: .2rem solid var(--main-color);
+	border: .2rem solid #0ef;
 	border-radius: 50%;
 	font-size: 2rem;
-	color: var(--main-color);
+	color: #0ef;
 	margin: 3rem 1.5rem 3rem;
 	transition: .5s ease;
 }
@@ -389,24 +394,17 @@ p{
 	justify-content: space-between;
 }
 
-.course-col{
-	flex-basis: 31%;
-	background: #fff3f3;
-	border-radius: 10px;
-	margin-bottom: 5%;
-	padding: 20px 12px;
-	box-sizing: border-box;
-	transition: 0.5s;
+.service-row{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	gap: 2.5rem;
 }
 
 h3{
 	text-align: center;
 	font-weight: 600;
 	margin: 10px 0;
-}
-
-.course-col:hover{
-	box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
 
 @media(max-width: 1000px){
@@ -484,7 +482,7 @@ h3{
 	flex-basis: 31%;
 	border-radius: 10px;
 	margin-bottom: 5%;
-	text-align: left;
+	text-align: center;
 }
 
 .facilities-col img{
@@ -499,7 +497,6 @@ h3{
 .facilities-col h3{
 	margin-top: 16px;
 	margin-bottom: 15px;
-	text-align: left;
 }
 
 /*--- Testimonials ---*/
@@ -740,7 +737,90 @@ h3{
   background-color: #555; /* Add a dark-grey background on hover */
 }
 
-/* for the bid */
+/*  for the bid section  */
 .file-uploaded {
 	padding: 0%, 20%;
+}
+
+
+
+/*  store page  */
+
+.store-padding{
+	padding: 1.5rem 5% 2.5rem
+	width: 80%;
+}
+
+.storerow{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	gap: 2.5rem;
+}
+
+@media(max-width: 1000px){
+	.storerow{
+		flex-direction: column;
+	}
+}
+
+.store{
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	padding: 90px 0% 0px;
+	background: #323946;
+}
+
+.storerow{
+	width: 60%;/* to ballance the sections with the background grey and the one that are dark */
+	margin: auto;
+}
+
+.sec {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	background: #323946;
+} 
+
+.net {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+} 
+
+.cables {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	background: #323946;
+} 
+
+.telcomms {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	} 
+
+.store-col{
+	flex-basis: 31%;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	text-align: center;
+}
+
+.store-col img{
+	width: 100%;
+	border-radius: 30px;
+}
+
+.store-col p{
+	padding: 0;
+}
+
+.store-col h3{
+	margin-top: 16px;
+	margin-bottom: 15px;
+/*	text-align: left;*/
 }
