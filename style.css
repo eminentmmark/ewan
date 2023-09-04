@@ -31,7 +31,7 @@ span{
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 20px 10%;
+	padding: 20px 8%;
 	background: #081b29;
 	display: flex;
 	justify-content: space-between;
@@ -765,6 +765,7 @@ h3{
 }
 
 .store{
+	height: 12vh;
 	width: 100%;
 	margin: auto;
 	text-align: center;
@@ -777,7 +778,8 @@ h3{
 	margin: auto;
 }
 
-.sec {
+.cables {
+padding: 90px 0% 40px;
 	width: 100%;
 	margin: auto;
 	text-align: center;
@@ -785,19 +787,22 @@ h3{
 } 
 
 .net {
+	padding: 90px 0% 40px;
 	width: 100%;
 	margin: auto;
 	text-align: center;
-} 
+}
 
-.cables {
+.sec {
+	padding: 90px 0% 40px;
 	width: 100%;
 	margin: auto;
 	text-align: center;
 	background: #323946;
 } 
-
-.telcomms {
+ 
+.telcomms {	
+	padding: 90px 0% 40px;
 	width: 100%;
 	margin: auto;
 	text-align: center;
