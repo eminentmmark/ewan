@@ -30,7 +30,7 @@ body {
 
 section {
 	min-height: 100vh;	
-	padding: 10rem 9% 2rem;
+	padding: 5rem 9% 2rem;
 }
 
 .header {
@@ -38,7 +38,7 @@ section {
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 2rem 9%;
+	padding: 2rem 10%;
 	background: var(--bg-color);
 	display: flex;
 	justify-content: space-between;
@@ -505,3 +505,36 @@ span{
 		margin-top: 2rem;
 	}
 }*/
+
+
+/*  services page  */
+
+.header2 {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 2rem 3%;
+	background: var(--bg-color);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+}
+
+.header2.sticky{
+	border-bottom: .2rem solid rgba(0, 0, 0, .2);
+}
+
+.services2 {
+	height: 12vh;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	padding: 170px 0% 0px;
+}
+
+.services2-text {
+	text-align: center;
+	font-size: 20px;
+}
