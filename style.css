@@ -36,7 +36,7 @@ section {
 	padding: 5.5rem 9% 2.5rem;
 }
 
-h1, h2, h3, h4, p{
+h1, h2, h3, p{
 	color: #c0c0c0;
 }
 
@@ -93,6 +93,9 @@ h1, h2, h3, h4, p{
 
 .home-img img{
 	width: 35vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	animation: floatImage 4s ease-in-out infinite;
 }
 
@@ -187,8 +190,8 @@ span{
 	text-align: center;
 }
 
-.about-img{
-	width: 35vw;
+.about-img img{
+	width: 30vw;
 }
 
 .heading{
@@ -291,7 +294,7 @@ span{
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+	background: linear-gradient(rgba(0, 0, 0, 0.05), var(--main-color));
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -333,14 +336,14 @@ span{
 }
 
 .contact{
-    width: 80%;
-    margin: auto;
+   /* width: 80%; */
+    margin: 0 10% 0;
     text-align: center;
 }
 
 .contact h2{
 	font-size: 3rem;
-	margin-bottom: 3rem;
+	margin-bottom: 2rem;
 }
 
 .row {
@@ -354,27 +357,38 @@ span{
 	color: var(--submain-color);
 }
 
-.contact-col {
-	font-size: 1.25rem;
+.contact-col{
+	width: 67px;
+	font-size: 1.2rem;
     flex-basis: 48%;
-    margin: 0rem 0 0rem;
+    margin: 0rem 0 2.5rem;
+}
+
+.contact-col p{
+	font-size: .85rem;
 }
 
 .contact-col div{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 6px 0 40px;
+	margin: 20px;
 }
 
 .contact-col div .fa /*icons*/{
 /*	font-size: 28px;*/
 	color: var(--main-color);
-	margin: 1.2rem;
+	margin: 1rem;
+}
+
+.contact-col div .bx /*icons*/{
+/*	font-size: 28px;*/
+	color: var(--main-color);
+	margin: 1rem;
 }
 
 .contact form{
-	max-width: 60%;
+	max-width: 70rem;
 	margin: 1rem auto 1rem;
 	text-align: center;
 }
@@ -387,16 +401,16 @@ span{
 
 .contact form .input-box input, .contact form textarea{
 	width: 100%;
-	padding: 1rem;
+	padding: .75rem;
 	font-size: 0.9rem;
 	color: var(--text-color);
 	background: var(--second-bg-color);
 	border-radius: .8rem;
-	margin: .4rem 0; /*  space in between the forms all round */
+	margin: .25rem 0; /*  space in between the forms all round */
 }
 
 .contact form .input-box input{
-	width: 49.25%; /*  space in between the forms vertically */
+	width: 49%; /*  space in between the forms vertically */
 }
 
 .contact form textarea{
@@ -417,7 +431,7 @@ span{
 }
 
 .ewan-logo img{
-	width: 180px;
+	width: 150px;
 }
 
 .footer{
@@ -465,10 +479,12 @@ span{
 }
 
 
+
 /*breakpoints*/
+
 @media (max-width: 1200px){
 	html{
-		font-size: 55%;
+		font-size: 92%;
 	}
 }
 
@@ -477,17 +493,29 @@ span{
 		padding: 2rem 3%;
 	}
 	section{
-		padding: 10rem 3% 2rem;
+		padding: 7.5rem 3% 2rem;
 	}
-	/*.services{
+	/*.home-content p{
+		font-size: 1.45rem;
+	}
+	.about-content p{
+		font-size: 1.45rem;
+	}*/
+	.services{
 		padding-bottom: 7rem;
 	}
+	/*.services-box p{
+		font-size: 1.55rem;
+	}*/
 	.portfolio{
 		padding-bottom: 7rem;
 	}
 	.contact{
 		min-height: auto;
-	}	*/
+	}
+	/*.brands p{
+		font-size: 1.25rem;
+	}*/
 	.footer{
 		padding: 2rem 3%;
 	}
@@ -522,68 +550,84 @@ span{
 	.home-content h3{
 		font-size: 2.6rem;
 	}
-	.home-content h1{
+	/*.home-content h1{
 		font-size: 5rem;
-	}
+	}*/
 	.home-img{
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		width: 70vw;
 		margin-top: 4rem;
 	}
-	.about{
-		flex-direction: column-reverse;
-	}
-	.about img{
-		width: 70vw;
-		margin-top: 4rem;
-	}
-	.services h2{
-		margin-bottom: 3rem;
-	}
-	.portfolio h2{
-		margin-bottom: 3rem;
-	}
-	.portfolio-container{
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-/*		flex-wrap: wrap;*/
-/*		grid-template-columns: repeat(2, 1fr);*/
-	}
-}
-
-@media (max-width: 617px){
-	.portfolio-container{
-/*		grid-template-columns: 1fr;*/
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-/*		flex-wrap: wrap;*/
-	}
-}
-
-@media (max-width: 450px){
-	html{
-		font-size: 50%;
-	}
-	.contact form .input-box input{
-		width: 100%;
-	}
-}
-
-@media (max-width: 365px){
 	.home-img img{
 		width: 90vw;
 	}
 	.about-img img{
 		width: 90vw;
 	}
+	.about{
+		flex-direction: column-reverse;
+	}
+	.about img{
+		width: 70vw;
+		margin-top: 1rem;
+	}
+	.services h2{
+		margin-bottom: 3rem;
+	}
+	/*.services-container{
+		grid-template-columns: repeat(2, 1fr);
+	}*/
+	.services-container{
+		display: flex;
+		flex-direction: column;
+	}
+	.portfolio h2{
+		margin-bottom: 3rem;
+	}
+	.portfolio-container{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.row{
+		display: flex;
+		flex-direction: column;
+	}
+	.contact-col{
+		margin: 0 0 0;
+		font-size: 2.5rem;		
+	}
+	.contact-col p{
+		font-size: 1.25rem;
+	}
+	.contact form .input-box input{
+		width: 100%;
+	}
+	.contact form .input-box input, .contact form textarea{
+		font-size: 1.25rem;
+	}
+}
+
+@media (max-width: 617px){
+	.portfolio-container{
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 450px){
+	html{
+		font-size: 82%;
+	}
+}
+
+@media (max-width: 365px){
 	.footer{
 		flex-direction: column-reverse;
 	}
-	.footer p{
+	/*.footer p{
 		text-align: center;
 		margin-top: 2rem;
-	}
+	}*/
 }
 
 
