@@ -592,6 +592,10 @@ h3{
 	background: #323946;
 }
 
+.footer a{
+	color: #f0d100;
+}
+
 .footer-text p{
 	font-size: 18px;
 }
@@ -651,7 +655,7 @@ h3{
 
 
 
-/*  store page  */
+/*--- store page ---*/
 
 .store-padding{
 	padding: 1.5rem 5% 2.5rem
@@ -774,7 +778,7 @@ padding: 90px 0% 40px;
 }
 
 @media (max-width: 768px){
-	h1, h2{
+	h1{
 		font-size: 2.6rem;
 	}
 	#menu-icon{
