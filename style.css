@@ -838,21 +838,23 @@ padding: 90px 0% 40px;
 	}
 	#bid form input, 
 	#bid form select{
-		padding: 12px;
+		padding: 8px;
 		border-radius: 6px;
 	}
-	.about-img img{
-		width: 90vw;
+	.about-col{
+		font-size: 1.25rem;
 	}
 	.about{
 		flex-direction: column-reverse;
 	}
-	.about img{
+	/*.about-img img{
+		width: 90vw;
+	}*/
+	/*.about img{
 		width: 70vw;
 		margin-top: 1rem;
-	}
+	}*/
 	.service-row{
-/*		grid-template-columns: 1fr;*/
 		flex-direction: column;
 	}
 	.testimonials-row{

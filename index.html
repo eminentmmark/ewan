@@ -91,32 +91,33 @@
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
-				padding: 50px 8% 40px; background: url(images/home_constructor_subheader_pattern.png);
+				padding: 50px 20% 40px; background: url(images/home_constructor_subheader_pattern.png);
 			/*	background-size: cover;*/
 				background-position: center;
 				overflow: hidden;
 				transition: 0.5s;
 				">
                 
-                <form action="includes/signup.inc.php" method="post">
-	                    <input type="text" name="uid" placeholder="Name of organization">
-	                    <input type="text" name="mail" placeholder="Organization's representative">
-	                    <input type="text" name="pwd" placeholder="Representative's email">
-	                    <select name="servis" id="servis">
-	                        <option value="">-Select desired service-</option>
-	                        <option value="tp">Turnkey project</option>
-	                        <option value="nc">New construction</option>
-	                        <option value="if">Interior fit-outs</option>
-	                        <option value="rar">Remodels and rennovations</option>
-	                        <option value="top">Take over projects</option>
-	                        <option value="si">Site improvements</option>
-	                    </select>
-	                    <input class="align-middle" type="file" name="doc" class="form-control" accept=".pdf,.txt,.xlms" title="urd">
+	                <form action="includes/signup.inc.php" method="post">
+		                    <input type="text" name="uid" placeholder="Name of organization">
+		                    <input type="text" name="mail" placeholder="Organization's representative">
+		                    <input type="text" name="pwd" placeholder="Representative's email">
+		                    <select name="servis" id="servis">
+		                        <option value="">-Select desired service-</option>
+		                        <option value="tp">Turnkey project</option>
+		                        <option value="nc">New construction</option>
+		                        <option value="if">Interior fit-outs</option>
+		                        <option value="rar">Remodels and rennovations</option>
+		                        <option value="top">Take over projects</option>
+		                        <option value="si">Site improvements</option>
+		                    </select>
+		                    <input class="align-middle" type="file" name="doc" class="form-control" accept=".pdf,.txt,.xlms" title="urd">
 
-	                    <div class="but">
-                  			<button type="submit" name="signup-submit">SUBMIT BID</button>
-                  		</div>        	
-                </form>
+		                    <div class="but">
+	                  			<button type="submit" name="signup-submit">SUBMIT BID</button>
+	                  		</div>        	
+	                </form>
+            	</div>
             </div>
 		</section>
 <!-- Bid end -->
