@@ -53,5 +53,3 @@
 		backDelay: 1000,
 		loop: true
 	});
-
-	// console.log('.home-content');
