@@ -590,7 +590,7 @@ nav .fa{
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	padding: .75rem 9%;
+	padding: .75rem 15%;
 	background: #323946;
 }
 
@@ -599,16 +599,17 @@ nav .fa{
 }
 
 .footer-text p{
-	font-size: 18px;
+	font-size: 22px;
+	font-weight: 500;
 }
 
 .footer-iconTop a{
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	padding: .8rem;
+	padding: .2rem;
 	background: #0ef;
-	border-radius: 1.1rem;
+	border-radius: 1.2rem;
 	transition: .5s ease;
 }
 
@@ -617,7 +618,7 @@ nav .fa{
 }
 
 .footer-iconTop a i{
-	font-size: 18px;
+	font-size: 35px;
 	color: #323946;
 }
 
@@ -780,6 +781,9 @@ padding: 90px 0% 40px;
 }
 
 @media (max-width: 768px){
+	.header{
+		padding: 1rem 3%;
+	}
 	h1{
 		font-size: 2.6rem;
 	}
@@ -792,7 +796,7 @@ padding: 90px 0% 40px;
 		left: 0;
 		width: 100%;
 		padding: 1rem 3%;
-		background: var(--bg-color);
+		background: #1f242d;
 		border-top: .1rem solid rgba(0, 0, 0, .2);
 		box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
 		display: none;
@@ -867,7 +871,7 @@ padding: 90px 0% 40px;
 	.contact-col p{
 		font-size: 1.25rem;
 	}
-	.contact form{
+	.contact form .input-box input{
 		width: 100%;
 	}
 	.contact form .input-box input, .contact form textarea{
