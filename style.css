@@ -129,7 +129,7 @@ nav .fa{
 
 #slideImg {
 	width: 100%;
-	height: auto;
+/*	height: auto;*/
 /*	animation: zoom 3s linear infinite; /* for the background image zoom animation*/
 }
 
@@ -600,21 +600,21 @@ nav .fa{
 
 .footer-text p{
 	font-size: 22px;
-	font-weight: 500;
+	font-weight: 450;
 }
 
 .footer-iconTop a{
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	padding: .2rem;
+	padding: .1rem;
 	background: #0ef;
 	border-radius: 1.2rem;
 	transition: .5s ease;
 }
 
 .footer-iconTop a:hover{
-	box-shadow: #0ef;
+	box-shadow: 0 0 1rem #0ef;
 }
 
 .footer-iconTop a i{
@@ -672,12 +672,6 @@ nav .fa{
 	gap: 2.5rem;
 }
 
-/*@media(max-width: 1000px){
-	.storerow{
-		flex-direction: column;
-	}
-}*/
-
 .store{
 	height: 12vh;
 	width: 100%;
@@ -731,7 +725,7 @@ padding: 90px 0% 40px;
 
 .store-col img{
 	width: 100%;
-	border-radius: 30px;
+	border-radius: 12.5px;
 }
 
 .store-col p{
@@ -787,6 +781,10 @@ padding: 90px 0% 40px;
 	h1{
 		font-size: 2.6rem;
 	}
+	p{
+		font-size: 1.45rem;
+		text-align: center;
+	}
 	#menu-icon{
 		display: block;
 	}
@@ -811,10 +809,8 @@ padding: 90px 0% 40px;
 	}
 	.home{
 		flex-direction: column;
+		height: 1000px;
 	}
-	/*.home-content h1{
-		font-size: 5rem;
-	}*/
 	.home-img{
 		display: flex;
 		justify-content: center;
@@ -823,7 +819,8 @@ padding: 90px 0% 40px;
 		margin-top: 4rem;
 	}
 	.home-img img{
-		width: 90vw;
+		padding-top: 0;
+		width: 100%;
 	}
 	.bid{
 		text-align: center;
@@ -857,6 +854,10 @@ padding: 90px 0% 40px;
 	.service-row{
 		flex-direction: column;
 	}
+	.storerow{
+		display: flex;
+		flex-direction: column;
+	}
 	.testimonials-row{
 		display: flex;
 		flex-direction: column;
@@ -878,6 +879,15 @@ padding: 90px 0% 40px;
 	}
 	.contact form .input-box input, .contact form textarea{
 		font-size: 1.25rem;
+	}
+	.store-padding h2{
+		font-size: 2rem;
+	}
+	.store-col h3{
+		font-size: 1.6rem;
+	}
+	.store h4{
+		font-size: 1.4rem;
 	}
 }
 
