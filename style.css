@@ -219,10 +219,10 @@ nav .fa{
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	width: 3rem;
-	height: 3rem;
+	width: 2.75rem;
+	height: 2.75rem;
 	background: transparent;
-	border: .2rem solid #0ef;
+	border: .175rem solid #0ef;
 	border-radius: 50%;
 	font-size: 2rem;
 	color: #0ef;
