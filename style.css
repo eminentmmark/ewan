@@ -151,7 +151,7 @@ nav .fa{
 .overlay {
 	width: 100%;
 	height: 100vh;
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
 	position: absolute;
 	top: 0;
 }
@@ -506,6 +506,10 @@ nav .fa{
 	text-align: center;
 }
 
+.contact-us h2{
+	padding-bottom: 20px;
+}
+
 .row {
     display: inline-flex;
     justify-content: center;
@@ -769,6 +773,15 @@ padding: 90px 0% 40px;
 	.contact{
 		min-height: auto;
 	}
+	.contact-us h1{
+	padding-bottom: 18px;
+	}
+	.contact-col h5{
+		font-size: 1.6rem;
+	}
+	.row{
+		flex-direction: column;
+	}
 	.footer{
 		padding: 2rem 3%;
 	}
@@ -779,7 +792,7 @@ padding: 90px 0% 40px;
 		padding: 1rem 3%;
 	}
 	h1{
-		font-size: 2.6rem;
+		font-size: 2.3rem;
 	}
 	p{
 		font-size: 1.45rem;
